@@ -17,9 +17,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Includes
-```
+```c
 #include <avr/wdt.h>              // avr-libc are licensed with a Modified BSD License, GPL-compatible.
-#include <SPI.h>                  // Licenses GNU LGPL version 2 or GNU LGPL version 2.1
+#include <SPI.h>                  // Licenses GNU GPL version 2 or GNU LGPL version 2.1
 #include <Ethernet.h>             // WIZnet W5100 Ethernet library license: GNU LGPL
 
 #include "aREST.h"                // Copyright (c) 2014-2016 Marco Schwartz
@@ -39,28 +39,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                   // https://github.com/jccprj/RemoteSwitch-arduino-library
 ```                                  
 # Usage
-```
-  Flamingo 500: /fla?params= { on / off / dim } . { controller_id } . { device_id } . [ dim_level ]
+
+### Flamingo 500: 
+```  
+  /fla?params= { on / off / dim } . { controller_id } . { device_id } . [ dim_level ]
 
   controller_id: [0..2^16-1] Address of transmitter. Duplicate the address of your hardware, or choose a random number. 
       device_id: [0..254]    Target device unit.
       dim_level: [0..254]    Dim level. 0 for off, 254 for brightest level.
 
-  Sample http://192.168.1.177/fla?params=off.39202.3 
-   
-  NewKaku: /dio?params= { on / off / dim } . { controller_id } . { device_id } . [ dim_level ]
+  Sample: http://192.168.1.177/fla?params=off.39202.3 
+```   
+### NewKaku: 
+```
+  /dio?params= { on / off / dim } . { controller_id } . { device_id } . [ dim_level ]
 
   controller_id: [0..2^26-1] Address of transmitter. Duplicate the address of your hardware, or choose a random number. 
       device_id: [0..15]     Target device unit.
       dim_level: [0..15]     Dim level. 0 for off, 15 for brightest level.
 
-  Sample http://192.168.1.177/dio?params=on.16241666.0
-
-  FHT-7901: /fht?params= { on / off } . { controller_id } . { device_id } 
+  Sample: http://192.168.1.177/dio?params=on.16241666.0
+```   
+### FHT-7901:  
+```
+  /fht?params= { on / off } . { controller_id } . { device_id } 
 
   controller_id: 5 characters as binary string from "00000" to "11111"  (0..31)
       device_id: 1 char value of [ 'A','B','C','D','E' ] (0..5) 
 
-  Sample http://192.168.1.177/fht?params=on.11111.b
+  Sample: http://192.168.1.177/fht?params=on.11111.b
 ```
  
