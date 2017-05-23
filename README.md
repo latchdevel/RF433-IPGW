@@ -16,7 +16,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Include
+# Includes
 ```
 #include <avr/wdt.h>              // avr-libc are licensed with a Modified BSD License, GPL-compatible.
 #include <SPI.h>                  // Licenses GNU LGPL version 2 or GNU LGPL version 2.1
