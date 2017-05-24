@@ -30,12 +30,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                   // https://github.com/windkh/flamingoswitch
                                   
 #include "NewRemoteTransmitter.h" // Made by Randy Simons http://randysimons.nl/
-                                  // License: GNU GPL v3. See ./NewRemoteSwitch/license.txt
-                                  // https://github.com/1technophile/NewRemoteSwitch/
+                                  // License: GNU GPL v3. 
+                                  // https://bitbucket.org/fuzzillogic/433mhzforarduino
                                   
 #include "RemoteTransmitter.h"    // Copyright 2010 Randy Simons. All rights reserved.
-                                  // License: "Free BSD license"
-                                  // https://github.com/jccprj/RemoteSwitch-arduino-library
+                                  // License: GNU GPL v3. 
+                                  // https://bitbucket.org/fuzzillogic/433mhzforarduino
                                   
 /*
   Flamingo 500: /fla?params= { on / off / dim } . { controller_id } . { device_id } . [ dim_level ]
@@ -52,14 +52,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       device_id: [0..15]     Target device unit.
       dim_level: [0..15]     Dim level. 0 for off, 15 for brightest level.
 
-  Sample http://192.168.1.177/dio?params=on.16241666.0
+  Sample http://192.168.1.177/dio?params=dim.16241666.1.7
 
   FHT-7901: /fht?params= { on / off } . { controller_id } . { device_id } 
 
   controller_id: 5 characters as binary string from "00000" to "11111"  (0..31)
       device_id: 1 char value of [ 'A','B','C','D','E' ] (0..5) 
 
-  Sample http://192.168.1.177/fht?params=on.11111.b
+  Sample http://192.168.1.177/fht?params=on.10011.b
 
  */
 
