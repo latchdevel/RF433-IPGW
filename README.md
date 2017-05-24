@@ -31,12 +31,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                   // https://github.com/windkh/flamingoswitch
                                   
 #include "NewRemoteTransmitter.h" // Made by Randy Simons http://randysimons.nl/
-                                  // License: GNU GPL v3. See ./NewRemoteSwitch/license.txt
-                                  // https://github.com/1technophile/NewRemoteSwitch/
+                                  // License: GNU GPL v3. 
+                                  // https://bitbucket.org/fuzzillogic/433mhzforarduino
                                   
 #include "RemoteTransmitter.h"    // Copyright 2010 Randy Simons. All rights reserved.
-                                  // License: "Free BSD license"
-                                  // https://github.com/jccprj/RemoteSwitch-arduino-library
+                                  // License: GNU GPL v3.
+                                  // https://bitbucket.org/fuzzillogic/433mhzforarduino
 ```                                  
 # Usage
 
