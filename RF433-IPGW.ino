@@ -98,13 +98,13 @@ void setup() {
   rest.set_name(F("rf433gw"));
 
   // Function to be exposed
-  rest.function("dio",NewKakuTX);
+  rest.function((char*)"dio",NewKakuTX);
   
   // Function to be exposed
-  rest.function("fla",FlamingoTX);
+  rest.function((char*)"fla",FlamingoTX);
 
   // Function to be exposed
-  rest.function("fht",FhtTX);
+  rest.function((char*)"fht",FhtTX);
 
   // Configure Flamingo Switch 
   faSwitch.enableTransmit(TX_PIN);
