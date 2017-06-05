@@ -1,7 +1,7 @@
 # RF433-IPGW
 TCP/IP Arduino Gateway to RF 433MHz AM transmitter over several ASK/OOK protocols
 
-[![Build Status](https://travis-ci.org/latchdevel/RF433-IPGW.svg?branch=master)](https://travis-ci.org/latchdevel/RF433-IPGW)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Build Status](https://travis-ci.org/latchdevel/RF433-IPGW.svg?branch=master)](https://travis-ci.org/latchdevel/RF433-IPGW) 
 
 Copyright (C) 2017 - jorge.rivera@11paths.com
 
